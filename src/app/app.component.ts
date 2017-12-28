@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './task';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tarefas';
+  // tasks:Array<Task>;
   
+  // constructor() {
+  //   let taskService = new TaskService();
+  //   this.tasks = taskService.tasks;
+  //   this.tasks.push(
+  //     {name: 'Cozinhar', value: 50, date_launch: '2017-10-01'}
+  //   );
+  // }
+
 }

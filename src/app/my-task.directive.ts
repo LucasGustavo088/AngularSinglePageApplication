@@ -19,7 +19,7 @@ export class MyTaskDirective {
   @Input()
   set myTask(value:Task) {
     this._myTask = value;
-    this.changeColorTask();
+    this.menorQueZero();
   }
   
   @HostListener('click')
@@ -27,7 +27,7 @@ export class MyTaskDirective {
     alert('Em manutenção. No futuro terá a possibilidade de remover');
   }
 
-  changeColorTask() { 
-    this.el.nativeElement.style.color = this.myTask.value < 0 ? 'gray' : 'white';
+  menorQueZero() { 
+    this.el.nativeElement.innerHTML = this.myTask.value < 0 ?'Não é possível remover uma tarefa com valor menor que R$ 0,00' : 'Remover';
   }
 }
