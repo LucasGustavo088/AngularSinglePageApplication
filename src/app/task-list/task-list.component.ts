@@ -10,7 +10,8 @@ export class TaskListComponent implements OnInit {
   tasks = [];
   task:Task = {
     name: "",
-    value: null
+    value: null,
+    date_launch: "2017-01-01"
   };
 
   constructor() { }

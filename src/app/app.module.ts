@@ -8,6 +8,9 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { FormatCurrencyPipe } from './format-currency.pipe';
+import { FormatDatePipe } from './format-date.pipe';
+import { MyTaskDirective } from './my-task.directive';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { TaskListComponent } from './task-list/task-list.component';
     MeuPrimeiro2Component,
     MeuPrimeiroComponent,
     DataBindingComponent,
-    TaskListComponent
+    TaskListComponent,
+    FormatCurrencyPipe,
+    FormatDatePipe,
+    MyTaskDirective
   ],
   imports: [
     BrowserModule,
